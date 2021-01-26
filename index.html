@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form</title>
+    <link href="index.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <!-- <form action="index.html"> -->
+    <div class="custInfo">
+        <div>
+            <h1>Customer Information</h1>
+            <label for="name">Full Name: </label>
+            <input type="text" id="name" placeholder="Enter your full name" required>
+        </div>
+        <br>
+        <div>
+            <label for="city">City: </label>
+            <input type="text" id="city" placeholder="Enter your city name" required>
+        </div>
+        <br>
+        <div>
+            <label for="paymentMethod">Payment Preference: </label>
+            <select id="paymentMethod">
+                <option value="cash"> Cash</option>
+                <option value="visaOrMc">VISA or MC</option>
+                <option value="debitCard">Debit Card</option>
+        </div>
+        </select>
+
+        <br><br>
+        <button type="submit" id="button" onclick="createList()">Submit</button>
+    </div>
+    <br>
+    <!-- </form> -->
+    <div id="customer">
+        <ul id="customerList">
+            <h1>My Customers</h1>
+
+        </ul>
+    </div>
+</body>
+<script type="text/javascript" src="index.js"></script>
+
+</html>
